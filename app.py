@@ -26,7 +26,7 @@ handbook_extracted = extract_text_from_pdf(handbook_path)
 # Create the chat client
 chat_client = ChatOpenAI(
     api_key=key,
-    model="gpt-o4-mini",
+    model="gpt-4o-mini",
     system_prompt=f"""
     Please review the following calendar and family handbook and use them to answer questions. When you provide an answer, please provide the specific location(s) in the calendar or handbook where you found the answer. If I provide a link to a newsletter or any other source of information, please review that source as well and consider and reference it when providing your answer. 
     

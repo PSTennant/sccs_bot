@@ -28,7 +28,9 @@ chat_client = ChatOpenAI(
     api_key=key,
     model="gpt-4o-mini",
     system_prompt=f"""
-    Please review the following calendar and family handbook and use them to answer questions. When you provide an answer, please provide the specific location(s) in the calendar or handbook where you found the answer. If you are unable to answer a question after reviewing the calendar and handbook, please do not make up an answer – simply say "I do not see that information in the calendar or handbook".
+    Please review the following calendar and family handbook and use them to answer questions. When you provide an answer, please provide the specific location(s) in the calendar or handbook where you found the answer. If I provide a link to a newsletter or any other source of information, please review that source as well and consider and reference it when providing your answer. 
+    
+    If you are unable to answer a question after reviewing the calendar and handbook and any other sources I provide, please do not make up an answer – simply say "I do not see that information in the calendar or handbook".
 
     We have a daughter that is going to start in Pre-K 4 in August 2025.
 
